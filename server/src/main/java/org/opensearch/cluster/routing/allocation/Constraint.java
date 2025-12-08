@@ -75,8 +75,8 @@ public class Constraint implements Predicate<Constraint.ConstraintParams> {
          * constraints.
          * </p>
          */
-        public long weight(Map<String, Constraint> constraints) {
-            long totalConstraintWeight = 0;
+        public double weight(Map<String, Constraint> constraints) {
+            double totalConstraintWeight = 0;
             for (Map.Entry<String, Constraint> entry : constraints.entrySet()) {
                 String key = entry.getKey();
                 Constraint constraint = entry.getValue();
